@@ -4,13 +4,11 @@ class Package (models.Model):
     name = models.CharField(max_length = 200)
     pol = models.CharField(max_lenght = 200) #posiçao atual
     pos = models.CharField(max_lenght = 200) #desitno
-    weight = models.FloatField(default = 0)
 
-    def __init__(self, name,pol,pos,weight):
+    def __init__(self, name,pol,pos):
         self.name =  name
         self.pol = pol
         self.pos = pos
-        self.weight = weight
     
     def getName()
         return self.name
@@ -20,8 +18,4 @@ class Package (models.Model):
     
     def getPos()
         return self.pos
-    
-    def getWeight()
-        return self.weight
-
     
